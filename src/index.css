@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-display: 'Cabinet Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+    --agri-dark: #0f2416;
+    --agri-primary: #1b5e20;
+    --agri-surface: #f4f7f2;
+    --agri-border: #dbe3d8;
+  }
+
+  html {
+    overflow-x: hidden;
+    max-width: 100vw;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #f5f7f4;
+    color: #1a2e20;
+    overflow-x: hidden;
+    max-width: 100vw;
+    min-height: 100dvh;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom scrollbars for ERP high-density data tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f4ed;
+}
+::-webkit-scrollbar-thumb {
+  background: #c3cfbe;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9ab094;
+}
+
+/* Tabular numbers for ERP tables */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+

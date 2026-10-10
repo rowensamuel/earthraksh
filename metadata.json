@@ -1,0 +1,6 @@
+{
+  "name": "EarthRakshak ERP",
+  "description": "Enterprise Agricultural Resource Planning platform for Farm Management, Machinery, Crop Advisory, Inventory, and Marketplace.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
